@@ -1,0 +1,21 @@
+   .button:hover {
+    -fx-background-color: transparent; 
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.8), 10, 0, 0, 1);
+    
+    
+    
+    -fx-graphic: url("zombieHands.png");
+     -fx-font-size: 32;
+    -fx-text-fill: #8B0000; /* red text */
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-family: "BLOODY TYPE PERSONAL USE";
+    
+    
+}
+.button{
+	    -fx-text-fill: #8B0000; /* red text */
+	
+	
+}

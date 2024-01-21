@@ -1,0 +1,35 @@
+.button-49 {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 76px;
+    -fx-font-size: 20px;
+    -fx-font-family: 'Bebas Neue', sans-serif;
+    -fx-background-color: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    -fx-border-width: 0;
+    -fx-text-fill: #fff;
+    -fx-letter-spacing: 3px;
+    -fx-effect: dropshadow(three-pass-box, #00E6F6, 6, 0, 0, 0);
+    -fx-focus-traversable: false;
+}
+
+.button-49:after {
+    -fx-content: 'ALTERNATE TEXT';
+    -fx-background-color: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    -fx-text-fill: #fff;
+    -fx-text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+}
+
+.button-49:hover:after {
+    -fx-animation: glitch 1s;
+    -fx-animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        -fx-background-insets: 50% 50% 50% 50% !important;
+        -fx-background-position: 80% -6px, 50% -6px, 10% -6px, 40% -6px, 80% -6px;
+        -fx-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        -fx-translate-x: -20px;
+        -fx-translate-y: -10px;
+    }
+}
+
